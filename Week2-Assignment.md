@@ -72,3 +72,51 @@ Build a RESTful API using Express.js that implements standard CRUD operations, p
 4. Commit and push your changes to GitHub
 5. Your submission will be automatically graded based on the criteria in the autograding configuration
 6. The instructor will review your submission after the autograding is complete 
+
+
+let products = [
+  {
+    id: '1',
+    name: 'Laptop',
+    description: 'High-performance laptop with 16GB RAM',
+    price: 1200,
+    category: 'electronics',
+    inStock: true
+  },
+  {
+    id: '2',
+    name: 'Smartphone',
+    description: 'Latest model with 128GB storage',
+    price: 800,
+    category: 'electronics',
+    inStock: true
+  },
+  {
+    id: '3',
+    name: 'Coffee Maker',
+    description: 'Programmable coffee maker with timer',
+    price: 50,
+    category: 'kitchen',
+    inStock: false
+  }
+];
+
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the Product API! Go to /api/products to see all products.');
+});
+
+// TODO: Implement the following routes:
+// GET /api/products - Get all products
+// GET /api/products/:id - Get a specific product
+// POST /api/products - Create a new product
+// PUT /api/products/:id - Update a product
+// DELETE /api/products/:id - Delete a product
+
+// Example route implementation for GET /api/products
+
+
+// TODO: Implement custom middleware for:
+// - Request logging
+// - Authentication
+// - Error handling
